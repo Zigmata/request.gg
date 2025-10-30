@@ -1,11 +1,15 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
+	import '../app.css';
+	import Nav from '$lib/Nav.svelte';
 
-	let { children } = $props();
+	// pull layout data if you need it later
+	const { data } = $props<{ data?: unknown }>();
 </script>
 
-<svelte:head>
-	<link rel="icon" href={favicon} />
-</svelte:head>
+<div class="layout">
+	<Nav />
 
-{@render children?.()}
+	<main>
+		<slot />
+	</main>
+</div>

@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+
+.full-bleed {
+	inline-size: 100vw;
+	margin-inline: calc(50% - 50vw);
+}
+
+.hide-mobile {
+	display: initial;
+}
+
+.hide-desktop {
+	display: none;
+}
+
+:root {
+	--bg: #0b0b12;
+	--surface: #12121b;
+	--border: #232334;
+	--fg: #e9e8ee;
+	--muted: #b9b7c7;
+	--brand: #7b2cff;
+	--brand-2: #14c3ff;
+	--radius: 14px;
+	--font-heading: 'Cinzel Decorative', serif;
+	--font-body: 'Crimson Text', serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	color: var(--fg);
+	background: var(--bg);
+	font-family: var(--font-body);
+}
+
+/* page chrome */
+.layout {
+	min-height: 100dvh;
+	display: grid;
+	grid-template-rows: auto 1fr;
+}
+
+/* sticky, glassy nav */
+.nav {
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 50;
+	background: black;
+	backdrop-filter: blur(8px);
+	border-bottom: 1px solid var(--border);
+	font-family: var(--font-heading);
+}
+
+.nav .container {
+	margin: 0 auto;
+	padding: 0 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 72px;
+}
+
+/* center content area scrolls naturally */
+main {
+	margin: 0 auto;
+	padding: 24px 16px;
+}
+
+/* pills/buttons */
+.pill {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.6rem 1rem;
+	border-radius: 999px;
+	border: 1px solid var(--border);
+	background: linear-gradient(180deg, #1e1a2a, #141420);
+	color: var(--fg);
+	text-decoration: none;
+}
+.pill.invite {
+	margin-left: auto;
+	padding: 0.6rem 1.1rem;
+	border-radius: 999px;
+	border-color: color-mix(in lab, var(--brand) 60%, white 20%);
+	background: linear-gradient(90deg, var(--brand), var(--brand-2));
+	color: white;
+	box-shadow: 0 0 24px rgba(123, 44, 255, 0.25);
+}
+
+/* nav layout */
+.nav-row {
+	height: 68px;
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+}
+.brand {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-weight: 700;
+	letter-spacing: 0.3px;
+	font-family: var(--font-heading);
+	color: var(--fg);
+	text-decoration: none;
+}
+.logo {
+	width: 48px;
+	height: 48px;
+	border-radius: 8px;
+	background: radial-gradient(100% 100% at 30% 20%, var(--brand) 0%, #4527a0 40%, #24183f 100%);
+	box-shadow: 0 0 14px rgba(123, 44, 255, 0.35) inset;
+}
+
+.navlinks {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.navlinks a {
+	color: var(--muted);
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.navlinks a.active,
+.navlinks a:hover {
+	color: var(--fg);
+}
+
+.spacer {
+	flex: 1;
+}
+
+@media (max-width: 720px) {
+	.hide-mobile {
+		display: none;
+	}
+	.hide-desktop {
+		display: initial;
+	}
+}
+
+.brand-button {
+  appearance:none;
+  border:0;
+  background:transparent;
+  color:var(--fg);
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+  font:inherit;
+  cursor:pointer;
+}
+
+.brand .chev{
+  opacity:.7;
+  transform: translateY(1px) rotate(0deg);
+  transition: transform .2s ease;
+}
+
+[data-open="true"] .chev{
+  transform: translateY(1px) rotate(180deg);
+}
+
+.scrim{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.45);
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .2s ease;
+}
+.scrim[data-open="true"]{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.mobile-drawer{
+  position:fixed;
+  top:68px;
+  right:0;
+  left:0;
+  background:var(--surface);
+  border-bottom: 1px solid var(--border);
+  display:grid;
+  gap:12px;
+  padding:16px;
+  transform: translateY(-8px);
+  opacity:0;
+  pointer-events:none;
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+.mobile-drawer a{
+  color:var(--fg);
+  text-decoration:none;
+  padding:10px 6px;
+  border-radius: 10px;
+  border:1px solid transparent
+}
+.mobile-drawer a:hover{
+  border-color:var(--border);
+  background:#0f0f17;
+}
+
+.mobile-drawer[data-open="true"]{
+  transform: translateY(0);
+  opacity:1;
+  pointer-events:auto;
+}
+
+/* motion-safe */
+@media (prefers-reduced-motion: reduce) {
+  .scrim, .mobile-drawer {
+    transition: none;
+  }
+}
+
+/* Keep nav menu above drawer/scrim */
+.nav {
+  z-index: 100;
+}
+
+.scrim, .mobile-drawer {
+  z-index: 90;
+}
