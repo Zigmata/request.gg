@@ -138,7 +138,7 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 docker-compose.yml
-Dockerfile
+Dockerfile*
 .dockerignore
 .devcontainer/
 nginx.conf
