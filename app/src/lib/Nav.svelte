@@ -10,7 +10,7 @@
 	<div class="container nav-row">
 		<a href="/" class="brand logo hide-mobile" aria-label="Homepage">
 			<img
-				src="/src/lib/assets/ReQuest_logo.png"
+				src="/ReQuest_logo.png"
 				alt="ReQuest Logo"
 				class="brand logo"
 				aria-hidden="true"
@@ -25,7 +25,7 @@
 			onclick={toggle}
 		>
 			<img
-				src="/src/lib/assets/ReQuest_logo.png"
+				src="/ReQuest_logo.png"
 				alt="ReQuest Logo"
 				class="logo hide-desktop"
 				aria-hidden="true"

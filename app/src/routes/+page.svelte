@@ -19,8 +19,8 @@
 		<div class="feature-video-container">
 			<div class="demo-card">
 				<video autoplay loop muted playsinline>
-					<source src="/src/lib/assets/video/webm/quest_post.webm" type="video/webm" />
-					<source src="/src/lib/assets/video/mp4/quest_post.mp4" type="video/mp4" />
+					<source src="/video/webm/quest_post.webm" type="video/webm" />
+					<source src="/video/mp4/quest_post.mp4" type="video/mp4" />
 				</video>
 			</div>
 		</div>
@@ -39,8 +39,8 @@
 		<div class="feature-video-container">
 			<div class="demo-card">
 				<video autoplay loop muted playsinline>
-					<source src="/src/lib/assets/video/webm/player_menu.webm" type="video/webm" />
-					<source src="/src/lib/assets/video/mp4/player_menu.mp4" type="video/mp4" />
+					<source src="/video/webm/player_menu.webm" type="video/webm" />
+					<source src="/video/mp4/player_menu.mp4" type="video/mp4" />
 				</video>
 			</div>
 		</div>
@@ -59,8 +59,8 @@
 		<div class="feature-video-container">
 			<div class="demo-card">
 				<video autoplay loop muted playsinline>
-					<source src="/src/lib/assets/video/webm/currency.webm" type="video/webm" />
-					<source src="/src/lib/assets/video/mp4/currency.mp4" type="video/mp4" />
+					<source src="/video/webm/currency.webm" type="video/webm" />
+					<source src="/video/mp4/currency.mp4" type="video/mp4" />
 				</video>
 			</div>
 		</div>
@@ -79,8 +79,8 @@
 		<div class="feature-video-container">
 			<div class="demo-card">
 				<video autoplay loop muted playsinline>
-					<source src="/src/lib/assets/video/webm/role_assignments.webm" type="video/webm" />
-					<source src="/src/lib/assets/video/mp4/role_assignments.mp4" type="video/mp4" />
+					<source src="/video/webm/role_assignments.webm" type="video/webm" />
+					<source src="/video/mp4/role_assignments.mp4" type="video/mp4" />
 				</video>
 			</div>
 		</div>

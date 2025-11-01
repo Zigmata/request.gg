@@ -141,3 +141,4 @@ docker-compose.yml
 Dockerfile
 .dockerignore
 .devcontainer/
+nginx.conf
