@@ -56,9 +56,23 @@
 			Service (such as quest descriptions, item names, etc.).
 		</p>
 		<p>
-			However, you grant us a limited, non-exclusive, worldwide, royalty-free license to use,
-			store, process, and display this content
-			<strong>solely for the purpose of operating and providing the Service to you</strong>.
+			However, by using the Service, you grant us a limited, non-exclusive, worldwide, royalty-free
+			license to use, store, process, display, reproduce, and distribute this content for the
+			following purposes:
+		</p>
+		<ul>
+			<li>
+				<strong>To operate and provide the Service to you</strong> and your server members.
+			</li>
+			<li>
+				<strong>For promotional purposes</strong>, such as in demonstrations, screenshots,
+				videos, or other advertisements for the ReQuest Service.
+			</li>
+		</ul>
+		<p>
+			We will make reasonable efforts to anonymize or obscure personally identifiable or private
+			information (such as user IDs or server names) if your content is used for promotional
+			purposes.
 		</p>
 	</section>
 
@@ -78,9 +92,8 @@
 	<section>
 		<h2>6. Disclaimers and Limitation of Liability</h2>
 		<p>
-			<strong>This is the "as-is" part.</strong> The Service is provided "as-is" and
-			"as-available" without any warranties of any kind. We do not guarantee that the Service will
-			be error-free, uninterrupted, or 100% available.
+			The Service is provided "as-is" and "as-available" without any warranties of any kind. 
+			We do not guarantee that the Service will be error-free, uninterrupted, or 100% available.
 		</p>
 		<p>
 			<strong>We are not responsible for data loss.</strong> We build this Service with care, but
@@ -107,10 +120,6 @@
 
 	<section>
 		<h2>8. Governing Law</h2>
-		<p>
-			This is the part where you need to decide what jurisdiction's laws apply. We're AI, not
-			lawyers. You should fill this in after consulting a legal professional.
-		</p>
 		<p>
 			These Terms shall be governed by and construed in accordance with the laws of the
 			<strong>State of Nevada, United States</strong>, without regard to its conflict of
