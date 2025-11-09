@@ -1,6 +1,6 @@
 <div class="policy-container">
-	<h1>Terms of Service for ReQuest</h1>
-	<p class="last-updated">Last Updated: November 4, 2025</p>
+	<h1>Terms of Service</h1>
+	<p class="last-updated">Last Updated: November 9, 2025</p>
 
 	<section>
 		<h2>1. Acceptance of Terms</h2>
